@@ -1,6 +1,6 @@
 class VowelCount
 
   def count(string)
-    5
+    string.count('aeiou')
   end
 end
