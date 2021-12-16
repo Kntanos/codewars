@@ -1,6 +1,8 @@
 class Odd
 
   def find(array)
-    1
+    array.uniq.select do | int |
+      array.count(int).odd?
+    end[0]
   end
 end
