@@ -1,9 +1,8 @@
-const Thermostat = require('./thermostat')
+const isSquare = require('./square')
 
-describe ('getTemperature', () => {
-  it ('returns the current set temperature', () => {
-    const thermostat = new Thermostat();
-
-    expect(thermostat.getTemperature()).toEqual(20);
+describe ('isSquare', () => {
+  it ('returns true if number is a square', () => {
+    
+    expect(isSquare(4)).toBe(true);
   });
 }); 
