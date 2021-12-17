@@ -15,4 +15,9 @@ describe ('isSquare', () => {
     
     expect(isSquare(9)).toBe(true);
   });
+
+  it ('returns false if number is not a square', () => {
+    
+    expect(isSquare(10)).toBe(false);
+  });
 }); 

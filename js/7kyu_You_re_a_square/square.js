@@ -1,9 +1,5 @@
 const isSquare = (num) => {
-  if(Math.sqrt(num) % 1 === 0) {
-    return true;
-  } else {
-    return false;
-  }
+  return Math.sqrt(num) % 1 === 0
 }
 
 module.exports = isSquare;
