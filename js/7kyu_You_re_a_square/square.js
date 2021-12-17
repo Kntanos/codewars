@@ -1,5 +1,5 @@
 const isSquare = (num) => {
-  if(num === 4 || num == 9) {
+  if(Math.sqrt(num) % 1 === 0) {
     return true;
   } else {
     return false;
