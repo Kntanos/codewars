@@ -1,0 +1,14 @@
+{
+  "name": "6kyu_array_diff",
+  "version": "1.0.0",
+  "description": "6kyu kata from Codewars",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Kostas Ntanos",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^27.4.5"
+  }
+}
