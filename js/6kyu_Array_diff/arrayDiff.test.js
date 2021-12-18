@@ -1,9 +1,8 @@
 const arrayDiff = require('./arrayDiff')
 
 describe ('arrayDiff', () => {
-  const expected = [2]
-  it ('returns expected array', () => {
+  it ('returns [2]', () => {
 
-    expect(arrayDiff([1, 2], [1])).toEqual(expected);
-  })
+    expect(arrayDiff([1, 2], [1])).toEqual([2]);
+  });
 });
