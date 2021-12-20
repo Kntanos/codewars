@@ -8,5 +8,16 @@ const list = "Fred:Corwill;Wilfred:Corwill;Barney:Tornbull;Betty:Tornbull;Bjon:T
     return list.split(";")
   }
 
+  const intoArrays = (list) => {
+    return list.map(string => {
+      return string.split(":") 
+    });
+  }
 
-module.exports = { uppercase, splitString }
+  const intoObjects = (list) => {
+    return list.map(element => {
+      return {... element}
+    });
+  }
+
+module.exports = { uppercase, splitString, intoArrays, intoObjects }
