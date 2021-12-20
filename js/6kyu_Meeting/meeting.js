@@ -30,4 +30,10 @@ const list = "Fred:Corwill;Wilfred:Corwill;Barney:Tornbull;Betty:Tornbull;Bjon:T
     })
   }
 
-module.exports = { uppercase, splitString, intoArrays, intoObjects, sortList }
+  const toString = (list) => {
+    return list.map(object => {
+      return [`${object[0]}, ${object[1]}`]
+    })
+  }
+
+module.exports = { uppercase, splitString, intoArrays, intoObjects, sortList, toString }

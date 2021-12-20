@@ -1,4 +1,4 @@
-const { uppercase, splitString, intoArrays, intoObjects, sortList } = require('./meeting');
+const { uppercase, splitString, intoArrays, intoObjects, sortList, toString } = require('./meeting');
 
 describe ('uppercase', () => {
   it ('turns the given string to uppercase', () => {
@@ -29,9 +29,16 @@ describe ('intoObjects', () => {
 })
 
 describe ('sortList', () => {
-  it ('sorts objects by last name', () => {
+  it ('sorts objects by last name and by first name', () => {
     
     expect(sortList([{0: "Fred", 1: "Cornwill"}, {0: "Wilfred", 1: "Bornwill"}])).toEqual([{0: "Wilfred", 1: "Bornwill"}, {0: "Fred", 1: "Cornwill"}])
     expect(sortList([{0: "Wilfred", 1: "Cornwill"}, {0: "Fred", 1: "Cornwill"}])).toEqual([{0: "Fred", 1: "Cornwill"}, {0: "Wilfred", 1: "Cornwill"}])
+  })
+})
+
+describe ('toString', () => {
+  it ('coverts objects to arrays of strings', () => {
+
+    expect(toString([{0: "Fred", 1: "Cornwill"}, {0: "Wilfred", 1: "Bornwill"}])).toEqual([["Fred, Cornwill"], ["Wilfred, Bornwill"]])
   })
 })
