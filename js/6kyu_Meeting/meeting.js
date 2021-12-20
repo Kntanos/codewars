@@ -20,8 +20,14 @@ const list = "Fred:Corwill;Wilfred:Corwill;Barney:Tornbull;Betty:Tornbull;Bjon:T
     });
   }
 
-  const sort = (list) => {
-    return list.sort((a, b) => a[1].localeCompare(b[1]));
+  const sortList = (list) => {
+    return list.sort((a, b) => {
+      if (a[1] < b[1]) return -1
+      if (a[1] > b[1]) return 1
+      if (a[0] < b[0]) return -1
+      if (a[0] > b[0]) return 1
+      return 0
+    })
   }
 
-module.exports = { uppercase, splitString, intoArrays, intoObjects, sort }
+module.exports = { uppercase, splitString, intoArrays, intoObjects, sortList }
