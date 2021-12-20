@@ -20,4 +20,8 @@ const list = "Fred:Corwill;Wilfred:Corwill;Barney:Tornbull;Betty:Tornbull;Bjon:T
     });
   }
 
-module.exports = { uppercase, splitString, intoArrays, intoObjects }
+  const sort = (list) => {
+    return list.sort((a, b) => a[1].localeCompare(b[1]));
+  }
+
+module.exports = { uppercase, splitString, intoArrays, intoObjects, sort }
