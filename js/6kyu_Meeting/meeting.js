@@ -36,4 +36,10 @@ const list = "Fred:Corwill;Wilfred:Corwill;Barney:Tornbull;Betty:Tornbull;Bjon:T
     })
   }
 
-module.exports = { uppercase, splitString, intoArrays, intoObjects, sortList, toString }
+  const meeting = (list) => {
+    return list.map(element => {
+      return `(${element.toString()})`
+    }).join("")
+  }
+
+module.exports = { uppercase, splitString, intoArrays, intoObjects, sortList, toString, meeting }
