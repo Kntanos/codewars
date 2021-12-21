@@ -25,5 +25,6 @@ describe ('order', () => {
   it ('orders the words by their number', () => {
 
     expect(order("is2 Thi1s")).toEqual("Thi1s is2")
+    expect(order("")).toEqual("")
   })
 })
