@@ -1,4 +1,4 @@
-const { splitString, sortArray } = require('./order')
+const { splitString, sortArray, backToString } = require('./order')
 
 describe ('splitString', () => {
   it ('returns the number in each word', () => {
@@ -11,5 +11,12 @@ describe ('sortArray', () => {
   it ('sorts the array according to number in word', () => {
 
     expect(sortArray(["is2", "Thi1s"])).toEqual(["Thi1s", "is2"])
+  })
+})
+
+describe ('backToString', () => {
+  it ('coverts the array back into string', () => {
+
+    expect(backToString(["Thi1s", "is2"])).toEqual("Thi1s is2")
   })
 })

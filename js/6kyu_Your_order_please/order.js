@@ -14,4 +14,8 @@ const sortArray = (array) => {
   }))
 }
 
-module.exports = { splitString, sortArray }
+const backToString = (array) => {
+  return array.join(" ")
+}
+
+module.exports = { splitString, sortArray, backToString }
