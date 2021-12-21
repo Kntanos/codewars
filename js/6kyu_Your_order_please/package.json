@@ -1,0 +1,17 @@
+{
+  "name": "6kyu_your_order_please",
+  "version": "1.0.0",
+  "description": "Your task is to sort a given string. Each word in the string will contain a single number. This number is the position the word should have in the result.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Kostas Ntanos",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^27.4.5"
+  },
+  "devDependencies": {
+    "eslint": "^8.5.0"
+  }
+}
