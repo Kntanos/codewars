@@ -16,11 +16,9 @@ const backToString = (array) => {
 }
 
 const order = (string) => {
-  const array = string.split(" ")
-  return array.sort((a, b) => {
+  return string.split(" ").sort((a, b) => {
     return a.match(/\d+/) - b.match(/\d+/) 
-   })
-   .join(" ")
+   }).join(" ")
 }
 
 module.exports = { splitString, sortArray, backToString, order }
