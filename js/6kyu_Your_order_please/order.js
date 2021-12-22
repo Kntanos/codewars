@@ -9,8 +9,6 @@ const sortArray = (array) => {
    let y = b.match(regex) 
    return x === y ? 0 : x > y ? 1 : -1
   })
-  
-  console.log(array.sort())
 }
 
 const backToString = (array) => {
@@ -19,9 +17,9 @@ const backToString = (array) => {
 
 const order = (string) => {
   const array = string.split(" ")
-  return array.sort(array.forEach((word) => {
-    return word.match(/\d+/)
-   }))
+  return array.sort((a, b) => {
+    return a.match(/\d+/) - b.match(/\d+/) 
+   })
    .join(" ")
 }
 
