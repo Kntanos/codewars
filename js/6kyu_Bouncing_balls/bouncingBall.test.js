@@ -28,6 +28,18 @@ describe ('bouncingBall', () => {
   it ('returns 15', () => {
     expect(bouncingBall(30.0, 0.66, 1.5)).toEqual(15)
   })
+
+  it ('returns -1', () => {
+    expect(bouncingBall(30.0, -1, 1.5)).toEqual(-1)
+  })
+
+  it ('returns -1', () => {
+    expect(bouncingBall(30.0, 0.66, 32.0)).toEqual(-1)
+  })
+
+  it ('returns -1', () => {
+    expect(bouncingBall(30.0, 1.1, 1.5)).toEqual(-1)
+  })
 })
 
 
