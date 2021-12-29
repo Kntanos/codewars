@@ -1,5 +1,5 @@
 const spinWords = (string) => {
-  return "neveS";
+  return string.split("").reverse().join("")
 }
 
 module.exports = spinWords
