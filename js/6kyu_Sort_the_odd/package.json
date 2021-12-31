@@ -1,0 +1,14 @@
+{
+  "name": "6kyu_sort_the_odd",
+  "version": "1.0.0",
+  "description": "Task You will be given an array of numbers. You have to sort the odd numbers in ascending order while leaving the even numbers at their original positions.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^27.4.5"
+  }
+}
