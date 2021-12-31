@@ -1,5 +1,6 @@
 const sortArray = (array) => {
-  return array.sort((a, b) => a- b)
+  const odd = array.filter((x) => x % 2).sort((a,b) => a - b);
+  return array.map((x) => x % 2 ? odd.shift() : x);
 }
 
 module.exports = sortArray
