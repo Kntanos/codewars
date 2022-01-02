@@ -1,0 +1,14 @@
+{
+  "name": "6kyu_consecutive_strings",
+  "version": "1.0.0",
+  "description": "Codewars kata",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Kostas Ntanos",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^27.4.5"
+  }
+}
