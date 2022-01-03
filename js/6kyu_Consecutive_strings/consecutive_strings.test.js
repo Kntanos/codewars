@@ -9,5 +9,8 @@ describe('longestConsec', () => {
     expect(longestConsec(['one', 'two', 'three', 'four'], 2)).toEqual('threefour')
     expect(longestConsec(['one', 'two', 'three', 'four'], 2)).toEqual('threefour')
     expect(longestConsec(['one', 'two', 'three', 'four'], 3)).toEqual('twothreefour')
+    expect(longestConsec(['one', 'two', 'three'], 4)).toEqual('')
+    expect(longestConsec(['one', 'two', 'three'], -1)).toEqual('')
+    expect(longestConsec([], 4)).toEqual('')
   })
 })
