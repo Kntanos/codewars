@@ -1,16 +1,122 @@
 const longestConsec = require ('./consecutive_strings')
 
 describe('longestConsec', () => {
-  it('concatenates k consecutive strings', () => {
+  it('return the first longest concatenated string', () => {
 
-    expect(longestConsec(['one', 'two'], 2)).toEqual('onetwo')
-    expect(longestConsec(['one', 'two', 'three'], 2)).toEqual('twothree')
-    expect(longestConsec(['one', 'two', 'three'], 3)).toEqual('onetwothree')
-    expect(longestConsec(['one', 'two', 'three', 'four'], 2)).toEqual('threefour')
+    array = ['ngcyldjtu',
+      'ujqfuayiphebvp',
+      'myuuiborxirn',
+      'xhakiayd',
+      'atrxpbfvanza',
+      'gisrmy',
+      'vnanfnvfeu',
+      'tpnwqnozghyzu',
+      'pggtgoxdiqiftb',
+      'bfnyntcoqdgvsda',
+      'dzgcuwxikts',
+      'ivfogglfk',
+      'iagspl',
+      'mfbtuj',
+      'drhastdd',
+      'zysahpepxji',
+      'wpxrkgw',
+      'cjjcgedio',
+      'fmxholk',
+      'umhnyagru',
+      'xgtrxlbiar',
+      'bmkapptvbd',
+      'wqpbwrvcjqpofgu',
+      'lkouaitbb',
+      'zmmqjcs',
+      'mrsvfrgzs',
+      'joizsqid',
+      'zqdeovamzi',
+      'ethilia',
+      'fxxcdgupucpu',
+      'rnmxfsbbkuttu',
+      'frwxihd',
+      'neumjwbjtuxsiwfmz',
+      'ypvwgnopjiva',
+      'hsaxoazclf',
+      'uuwsznqiv',
+      'adniufsgrvvg',
+      'rgegkrf',
+      'iurmslsdwtl',
+      'zsvroejdhborlstp',
+      'qzvmvnwevn',
+      'ppbswdxzla',
+      'ybywuf',
+      'luafoabatzw',
+      'oalwjfoefxzhzdds',
+      'igfrguuqcre',
+      'huavgwqgim',
+      'yxjbstxutljnqf',
+      'yzvumhnpxi',
+      'oqrqbppgpmj',
+      'pukawgdznze',
+      'tcwktsawjlbvrc',
+      'xvxivtntk',
+      'gswaxqzvlyvorl',
+      'glhudev',
+      'ukdkepazd',
+      'axxtkz',
+      'xixitbzfnpu',
+      'oleqsuof',
+      'swwuciqarnjcsq',
+      'jochpqh',
+      'jhpbhrlcv',
+      'izdenyselfqsyytc',
+      'kyjyep',
+      'bxqdbqsyve',
+      'gtqhyglufrvwp',
+      'rzllmvihp',
+      'igtbkan',
+      'hvxssel',
+      'jqlvixzvr',
+      'ukaijjdfcdq',
+      'surmivfl',
+      'cixeecmyffsb',
+      'pxphfcmhqni',
+      'rtnqxdbp',
+      'ioggtuksqivku',
+      'lbxpbivjxjcm',
+      'igofxaieizn',
+      'ckxjywp',
+      'skdofbedwtb',
+      'btbgyvoz',
+      'awmmdxvudrx',
+      'asxukwgi',
+      'vxhucncbwetlcc',
+      'whfzbftv',
+      'rxtzlkvoflocql',
+      'ypfvmzfvpr',
+      'sylmiungmkibe',
+      'zvbbwpnj',
+      'jqqxqnshje',
+      'kjmbkbucl',
+      'pardjtwmddkpkl',
+      'ukzftwhjmf',
+      'yzuwxunvqjyf',
+      'sosnabgz',
+      'uthmpwyapnculq',
+      'khxpcddmbthu',
+      'bbsuujqbx',
+      'ivdnouprm',
+      'kqpalvseb', 'sdf', 'sdf', 'sdf', 'sdf', 'sdf', 'sdf', 'sdf', 'sdf', 'sdf', 'sdf', 'sdf']
+
+
+
+    expect(longestConsec(['one', 'two', 'abc', 'abc'], 1)).toEqual('one')
+    expect(longestConsec(['tne', 'two', 'one', '123', 'one', '123', 'two'], 2)).toEqual('tnetwo')
+    expect(longestConsec(['one', 'two', 'three', '123'], 3)).toEqual('onetwothree')
+    expect(longestConsec(['one', 'two', 'three', 'faar', 'abcde', 'abcd', '1234', 'three', 'foora'], 3)).toEqual('threefaarabcde')
     expect(longestConsec(['one', 'two', 'three', 'four'], 2)).toEqual('threefour')
     expect(longestConsec(['one', 'two', 'three', 'four'], 3)).toEqual('twothreefour')
     expect(longestConsec(['one', 'two', 'three'], 4)).toEqual('')
     expect(longestConsec(['one', 'two', 'three'], -1)).toEqual('')
-    expect(longestConsec([], 4)).toEqual('')
+    expect(longestConsec(array, 19)).toEqual('fxxcdgupucpurnmxfsbbkuttufrwxihdneumjwbjtuxsiwfmzypvwgnopjivahsaxoazclfuuwsznqivadniufsgrvvgrgegkrfiurmslsdwtlzsvroejdhborlstpqzvmvnwevnppbswdxzlaybywufluafoabatzwoalwjfoefxzhzddsigfrguuqcrehuavgwqgimyxjbstxutljnqf')
+
+
+
   })
 })
