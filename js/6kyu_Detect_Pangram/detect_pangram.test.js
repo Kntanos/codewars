@@ -3,8 +3,8 @@ const isPangram = require('./detect_pangram')
 describe('isPangram', () => {
   it('returns true if str is Pangram', () => {
     let str1 = 'abcdefghijklmnopqrstuvwxyz'
-    let str2 = 'abcde33fghi jklmn4opq rstuv33wxyz'
-    let str3 = 'aBcdefghi jkLmnopq rstuvwxyz'
+    let str2 = 'abcde 33 fghi jklmn4opq rstuv33wxyz'
+    let str3 = 'aBcdefghi jkLMNopq rstuvwxyz'
 
     expect(isPangram(str1)).toBe(true)
     expect(isPangram(str2)).toBe(true)
