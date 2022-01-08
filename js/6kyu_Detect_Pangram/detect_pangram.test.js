@@ -6,5 +6,10 @@ describe('isPangram', () => {
 
     expect(isPangram(str)).toBe(true)
   })
-  
+
+  it('returns false if str is not Pangram', () => {
+    let str = 'abcdef'
+
+    expect(isPangram(str)).toBe(false)
+  })
 })
