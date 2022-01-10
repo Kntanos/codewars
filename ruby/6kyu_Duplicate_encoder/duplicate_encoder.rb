@@ -1,5 +1,6 @@
 def duplicate_encode(word)
-  word.downcase.chars.map do |char|
+  word = word.downcase
+  word.chars.map do |char|
     if word.count(char) > 1
       char = ')'
     else char = '('
