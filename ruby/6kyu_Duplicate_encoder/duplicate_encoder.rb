@@ -1,6 +1,6 @@
 def duplicate_encode(word)
   word.chars.map do |char|
-    if char == 'e'
+    if word.count(char) > 1
       char = ')'
     else char = '('
     end

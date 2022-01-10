@@ -5,5 +5,6 @@ describe '.duplicate_encode' do
     
     expect(duplicate_encode('din')).to eq('(((')
     expect(duplicate_encode('recede')).to eq('()()()')
+    expect(duplicate_encode('dinner')).to eq('(())((')
   end
 end
