@@ -1,9 +1,14 @@
-def dirReduc(directions)
-  needlessDir = {'North' => 'South', 'South' => 'North', 'West' => 'East'}
+OPPOSITE = {
+  "North" => "South",
+  "South" => "North",
+  "East"  => "West",
+  "West"  => "East"
+}
 
-  if directions[0] == needlessDir[directions[1]]
-    []
-  else
-    directions
+def dirReduc(arr)
+  stack = []
+  arr.each do |dir|
+    OPPOSITE[dir] == stack.last ? stack.pop : stack.push(dir)
   end
+  stack
 end
