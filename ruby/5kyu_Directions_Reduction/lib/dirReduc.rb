@@ -1,3 +1,3 @@
 def dirReduc(directions)
-  ['North']
+  directions
 end
