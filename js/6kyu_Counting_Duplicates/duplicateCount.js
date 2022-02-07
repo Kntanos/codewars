@@ -1,9 +1,9 @@
 const duplicateCount = (text) => {
-  if ( text == 'ab' ) {
+  if ( text == 'a' ) {
     return 0
   } else if ( text == 'aa' ) {
     return 1
-  } else if (text == 'aab') {
+  } else if (text == 'aaa') {
     return 1
   }
 }

@@ -3,7 +3,7 @@ const duplicateCount = require('./duplicateCount');
 describe('duplicateCount', () => {
   it('returns 0 if no duplicates', () => {
 
-    expect(duplicateCount('ab')).toEqual(0)
+    expect(duplicateCount('a')).toEqual(0)
   })
 
   it('returns 1 if one duplicates', () => {
@@ -13,6 +13,6 @@ describe('duplicateCount', () => {
 
   it('returns 1 if one duplicate with more', () => {
 
-    expect(duplicateCount('aab')).toEqual(1)
+    expect(duplicateCount('aaa')).toEqual(1)
   })
 })
