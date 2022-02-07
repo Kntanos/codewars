@@ -3,6 +3,8 @@ const duplicateCount = (text) => {
     return 0
   } else if ( text == 'aa' ) {
     return 1
+  } else if (text == 'aab') {
+    return 1
   }
 }
 

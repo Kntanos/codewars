@@ -11,13 +11,8 @@ describe('duplicateCount', () => {
     expect(duplicateCount('aa')).toEqual(1)
   })
 
-  it('returns 1 if one duplicates', () => {
+  it('returns 1 if one duplicate with more', () => {
 
-    expect(duplicateCount('aa')).toEqual(1)
-  })
-
-  it('returns 1 if more than duplicate', () => {
-
-    expect(duplicateCount('aaa')).toEqual(1)
+    expect(duplicateCount('aab')).toEqual(1)
   })
 })
