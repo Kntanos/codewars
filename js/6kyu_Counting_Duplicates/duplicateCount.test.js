@@ -30,4 +30,9 @@ describe('duplicateCount', () => {
 
     expect(duplicateCount('aabb')).toEqual(2)
   })
+
+  it('returns 1 if one duplicate b', () => {
+
+    expect(duplicateCount('aa1bb1c2')).toEqual(3)
+  })
 })

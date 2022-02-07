@@ -1,13 +1,13 @@
 const duplicateCount = (text) => {
-  let counter = 0;
- 
-  if (text.split('').filter(x => x.toLowerCase() == 'a').length > 1) {
-    counter +=1
-  } 
-  if (text.split('').filter(x => x.toLowerCase() == 'b').length > 1) {
-    counter +=1
-  }
-  return counter
+  const array = text.split('').map(x => x.toLowerCase());
+
+  const counts = {};
+  
+  array.forEach((x) => {
+    counts[x] = (counts[x] || 0) + 1;
+  });
+
+  return Object.values(counts).filter(v => v > 1).length
 }
 
 module.exports = duplicateCount;
