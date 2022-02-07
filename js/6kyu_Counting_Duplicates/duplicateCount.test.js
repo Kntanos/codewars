@@ -15,4 +15,9 @@ describe('duplicateCount', () => {
 
     expect(duplicateCount('aaa')).toEqual(1)
   })
+
+  it('returns 1 if one duplicates case insensitive', () => {
+
+    expect(duplicateCount('aA')).toEqual(1)
+  })
 })
