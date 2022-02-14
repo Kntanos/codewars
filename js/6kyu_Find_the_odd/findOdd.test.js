@@ -10,4 +10,9 @@ describe('findOdd', () =>{
 
     expect(findOdd([1])).toEqual(1)
   })
+
+  it('returns the odd from 3 elements', () => {
+
+    expect(findOdd([0,0,1])).toEqual(1)
+  })
 })
