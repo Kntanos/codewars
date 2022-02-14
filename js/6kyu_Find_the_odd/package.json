@@ -1,0 +1,15 @@
+{
+  "name": "6kyu_find_the_odd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gem": "^2.4.3",
+    "jest": "^27.5.1"
+  }
+}
