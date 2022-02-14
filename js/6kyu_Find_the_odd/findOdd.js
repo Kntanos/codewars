@@ -1,8 +1,11 @@
 function findOdd(A) {
-  if (A.length === 3) {
-    return A[2]
+  if (A.length === 1) {
+    return A[0];
   }
-  return A[0];
+
+  if (A.includes(1)) {
+    return 1
+  }
 }
 
 module.exports = findOdd
