@@ -25,4 +25,9 @@ describe('findOdd', () =>{
 
     expect(findOdd([0,2,0])).toEqual(2)
   })
+
+  it('returns the odd from 3 elements', () => {
+
+    expect(findOdd([1,2,2,3,3,3,4,3,3,3,2,2,1])).toEqual(4)
+  })
 })
