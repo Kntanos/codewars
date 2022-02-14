@@ -3,9 +3,7 @@ function findOdd(A) {
     return A[0];
   }
 
-  if (A.includes(1)) {
-    return 1
-  }
+  return A.find (i => i != 0)
 }
 
 module.exports = findOdd
