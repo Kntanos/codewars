@@ -6,8 +6,13 @@ describe('wave', () => {
     expect(wave("")).toEqual([""])
   })
 
-  it('returns the one letetr capitalised in an array', () =>{
+  it('returns the one letter capitalised in an array', () =>{
 
     expect(wave("a")).toEqual(["A"])
+  })
+
+  it('returns an array with 2 strings, each with one capital letter ', () =>{
+
+    expect(wave("ab")).toEqual(["Ab", "aB"])
   })
 })
