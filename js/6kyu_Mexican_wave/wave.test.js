@@ -15,4 +15,9 @@ describe('wave', () => {
 
     expect(wave("ab")).toEqual(["Ab", "aB"])
   })
+
+  it('returns Mexican wave from word with repeated letters', () =>{
+
+    expect(wave("aba")).toEqual(["Aba", "aBa", "abA"])
+  })
 })

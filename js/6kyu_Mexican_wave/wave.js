@@ -1,11 +1,14 @@
 const wave = (str) => {
-  if (str.length === 0) {
-    return [str]
-  } else {
-    return str.split('').map(char => 
-      str.replace(char, char.toUpperCase())
-    )
+  let newArr = [];
+  for (let i = 0; i < str.length; i++) {
+    let copy = str.split('');
+    if(copy[i] !== ' ') {
+    copy[i] = copy[i].toUpperCase()
+    newArr.push(copy.join(''))
+    }
   }
+  return newArr
 }
+
 
 module.exports = wave
