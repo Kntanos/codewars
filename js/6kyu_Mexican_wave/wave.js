@@ -1,5 +1,5 @@
 const wave = (str) => {
-  return [""]
+  return [str]
 }
 
 module.exports = wave
